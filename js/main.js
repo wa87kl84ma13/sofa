@@ -33,17 +33,17 @@ var currentImage = 0;
 var leftArrow = document.querySelector('#arrow-left');
 var rightArrow = document.querySelector('#arrow-right');
 
-// Fade
-$('.arrow').bind('click touchstart', function() {
-    $('.banner-image').fadeIn('slow');
-});
-
 // Clear images
 function clearImages() {
     for(var i = 0; i < sliderImages.length; i++) {
         sliderImages[i].style.display = 'none';
     }
 }
+
+// Fade
+$('.arrow').on('click', function() {
+    $('.banner-image').fadeIn(800);
+});
 
 // Start slide and get first image
 function startSlide() {
