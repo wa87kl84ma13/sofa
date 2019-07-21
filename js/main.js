@@ -40,6 +40,11 @@ function clearImages() {
     }
 }
 
+// Fade
+$('.arrow').on('click', function() {
+    $('.banner-image').fadeIn(700);
+});
+
 // Start slide and get first image
 function startSlide() {
     clearImages();
