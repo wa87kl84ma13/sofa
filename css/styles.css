@@ -775,6 +775,25 @@ input[type="search"] {
         overflow: hidden;
         z-index: 20;
     }
+
+    .new-content {
+        min-height: 300px;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .newsletter-wrap {
+        display: block;
+    }
+
+    .newsletter-text {
+        padding-bottom: 8px;
+    }
+
+    .footer {
+        padding-left: 30px;
+    }
 }
   
   /* 
@@ -833,5 +852,9 @@ input[type="search"] {
         right: 0;
         overflow: hidden;
         z-index: 20;
+    }
+
+    .footer {
+        padding-left: 35px;
     }
 }
