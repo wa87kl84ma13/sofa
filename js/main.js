@@ -35,7 +35,7 @@ var rightArrow = document.querySelector('#arrow-right');
 
 // Clear images
 function clearImages() {
-    for(let i = 0; i < sliderImages.length; i++) {
+    for(var i = 0; i < sliderImages.length; i++) {
         sliderImages[i].style.display = 'none';
     }
 }
