@@ -32,75 +32,46 @@ function openSearch(e) {
 searchIcon.addEventListener('click', openSearch);
 
 // Banner slideshow
-const sliderImages = document.querySelectorAll('.banner-image');
-let currentImage = 0;
-const leftArrow = document.querySelector('#arrow-left');
-const rightArrow = document.querySelector('#arrow-right');
-
-$('#arrow-left').on('click', function() {
-    $(".banner-image").fadeIn("slow");
-});
-
-$('#arrow-right').on('click', function() {
-    $(".banner-image").fadeIn("slow");
-});
+var sliderImages = document.querySelectorAll('.banner-image');
+var currentImage = 0;
 
 // Clear images
 function clearImages() {
-    for(let i = 0; i < sliderImages.length; i++) {
+    for(var i = 0; i < sliderImages.length; i++) {
         sliderImages[i].style.display = 'none';
     }
 }
 
-// Start slide and get first image
 function startSlide() {
     clearImages();
     sliderImages[0].style.display = 'block';
 }
 
-// Slide left
 function slideLeft() {
     clearImages();
     sliderImages[currentImage - 1].style.display = 'block';
     currentImage--;
 }
 
-// Slide right
 function slideRight() {
     clearImages();
     sliderImages[currentImage + 1].style.display = 'block';
     currentImage++;
 }
 
-// Click left arrow to slide
-leftArrow.addEventListener('touchstart', function(e) {
+$('#arrow-left').on('click', function() {
     if(currentImage === 0) {
         currentImage = sliderImages.length;
     }
-
-    e.preventDefault();
-
+    $('.banner-image').fadeIn(700);
     slideLeft();
 });
 
-leftArrow.addEventListener('click', function(e) {
-    if(currentImage === 0) {
-        currentImage = sliderImages.length;
-    }
-
-    e.preventDefault();
-
-    slideLeft();
-});
-
-// Click right arrow to slide
-rightArrow.addEventListener('click', function(e) {
+$('#arrow-right').on('click', function() {
     if(currentImage === sliderImages.length - 1) {
         currentImage = -1;
     }
-
-    e.preventDefault();
-
+    $('.banner-image').fadeIn(700);
     slideRight();
 });
 
