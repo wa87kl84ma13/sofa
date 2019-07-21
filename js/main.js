@@ -73,7 +73,17 @@ function slideRight() {
 }
 
 // Click left arrow to slide
-leftArrow.addEventListener('click', function() {
+leftArrow.addEventListener('touchstart', function(e) {
+    if(currentImage === 0) {
+        currentImage = sliderImages.length;
+    }
+
+    e.preventDefault();
+
+    slideLeft();
+});
+
+leftArrow.addEventListener('click', function(e) {
     if(currentImage === 0) {
         currentImage = sliderImages.length;
     }
