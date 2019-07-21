@@ -392,9 +392,9 @@ button {
 
 /*-- NEWSLETTER --*/
 .newsletter {
-    background: #5B5B5B;
+    background: #7EACCE;
     padding: 20px 0;
-    color: #fff;
+    color: #000;
 }
 
 .newsletter-wrap {
@@ -431,7 +431,7 @@ button {
 
 /*-- FOOTER --*/
 .footer {
-    background: salmon;
+    background: #000;
     padding: 45px 0;
 }
 
@@ -447,7 +447,7 @@ button {
 
 .footer-content h4 {
     padding-bottom: 15px;
-    color: #000;
+    color: #fff;
 }
 
 .footer-content li {
