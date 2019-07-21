@@ -26,7 +26,6 @@ ul {
 
 button {
     text-transform: uppercase;
-    cursor: pointer;
 }
 
 img {
@@ -95,7 +94,6 @@ img {
 .top-icons {
     padding: 4px 8px 0 8px;
     font-size: 1.1rem;
-    cursor: pointer;
 }
 
 /*-- SEARCH BAR --*/
@@ -129,15 +127,6 @@ img {
     padding-bottom: 10px;
 }
 
-#close-search {
-    font-size: 5rem;
-    transform: rotate(45deg);
-    position: absolute;
-    right: 27%;
-    top: 40px;
-    cursor: pointer;
-}
-
 .main-nav {
     background: #4F82C5;
 }
@@ -152,6 +141,14 @@ img {
 .nav-wrap li:hover {
     background: #fff;
     color: #4F82C5;
+}
+
+#arrow-left,
+#arrow-right,
+#hamburger-menu,
+.nav-wrap li:hover,
+.top-icons,
+button {
     cursor: pointer;
 }
 
@@ -163,7 +160,6 @@ img {
     font-size: 3rem;
     z-index: 10;
     opacity: 0.7;
-    cursor: pointer;
 }
 
 #arrow-left {
@@ -238,7 +234,6 @@ img {
 .action-btn {
     background: #4F82C5;
     color: #fff;
-    cursor: pointer;
     border: none;
     font-size: 1.1rem;
     padding: 15px 20px;
