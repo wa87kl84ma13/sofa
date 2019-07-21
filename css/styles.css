@@ -499,13 +499,21 @@ img {
 
     .main-nav {
         display: none;
-        z-index: 10;
-        padding-top: 45px;
+        padding-top: 15px;
+    }
+
+    .main-nav {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        overflow: hidden;
+        z-index: 20;
     }
 
     .nav-wrap li {
         display: block;
-        padding: 5px;
+        padding: 12px 5px;
         border-bottom: 1px solid #fff;
     }
 
@@ -547,6 +555,8 @@ img {
 
     .search-bar-wrap {
         padding: 30px 0 80px 0;
+        z-index: 10000;
+        position: relative;
     }
 
     #search-btn {
@@ -579,16 +589,28 @@ img {
 
     .featured-btn, 
     .accessories-btn {
-        padding: 10px;
+        padding: 10px 25px;
         font-size: 0.9rem;
     }
 
-    .featured-text h4,
+    .featured-text h4 {
+        font-size: 1.3rem;
+    }
+
     .new-content p {
         font-size: 1rem;
     }
 
-    .new-wrap {
+    .featured-content {
+        padding-bottom: 65px;
+    }
+
+    .featured-content:last-child {
+        padding-bottom: 25px;
+    }
+
+    .new-wrap,
+    .featured-wrap {
         display: block;
     }
 
@@ -609,17 +631,28 @@ img {
         font-size: 0.9rem;
     }
 
+    .accessories-wrap {
+        display: block;
+    }
+
+    .accessories-content {
+        margin: 0;
+    }
+
+    .accessories-content:first-child {
+        padding-bottom: 25px;
+    }
+
     .accessories-text h4 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .accessories-text p {
-        font-size: 0.85rem;
+        font-size: 1.1rem;
     }
 
     .accessories-btn {
-        width: 90%;
-        font-size: 0.7rem;
+        width: 70%;
     }
 
     .newsletter {
@@ -650,7 +683,7 @@ img {
     }
 
     .footer {
-        padding-bottom: 120px;
+        padding-bottom: 50px;
     }
 
     .footer-wrap {
@@ -667,5 +700,129 @@ img {
 
     .footer-content:first-child {
         display: none;
+    }
+}
+
+/*-- MOBILE IN LANDSCAPE --*/
+@media (min-width: 481px) and (max-width: 768px) {
+    #hamburger-menu {
+        width: 7%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #hamburger-menu {
+        width: 5%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px;
+    } 
+
+    .main-nav {
+        display: none;
+    }
+
+    .logo {
+        flex: 10%;
+    }
+
+    .account-search {
+        padding-right: 100px;
+        flex: 40%;
+    }
+
+    .banner-content h1 {
+        font-size: 2.2rem;
+        padding-top: 45%;
+    }
+
+    .banner-content {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #arrow-left,
+    #arrow-right {
+        top: 32%;
+    }
+
+    .nav-wrap li {
+        display: block;
+        padding: 15px 5px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .main-nav {
+        width: 85%;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        overflow: hidden;
+        z-index: 20;
+    }
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #hamburger-menu {
+        width: 5%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .logo {
+        flex: 10%;
+    }
+
+    .account-search {
+        padding-right: 100px;
+        flex: 40%;
+    }
+
+    .banner-content h1 {
+        font-size: 2.2rem;
+        padding-top: 25%;
+    }
+
+    .banner-content {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #arrow-left,
+    #arrow-right {
+        top: 32%;
+    }
+
+    .nav-wrap li {
+        display: block;
+        padding: 15px 5px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .main-nav {
+        width: 90%;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        overflow: hidden;
+        z-index: 20;
     }
 }
