@@ -1,6 +1,6 @@
-var hamburger = document.querySelector('#hamburger-menu');
-var nav = document.querySelector('.main-nav');
-var closeNav = document.querySelector('.close');
+const hamburger = document.querySelector('#hamburger-menu');
+const nav = document.querySelector('.main-nav');
+const closeNav = document.querySelector('.close');
 
 function openMenu() {
     if(nav.style.display === 'block') {
@@ -28,22 +28,14 @@ function openSearch() {
 searchIcon.addEventListener('click', openSearch);
 
 // Banner slideshow
-var sliderImages = document.querySelectorAll('.banner-image');
-var currentImage = 0;
-var leftArrow = document.querySelector('#arrow-left');
-var rightArrow = document.querySelector('#arrow-right');
-
-$('#arrow-left').on('click', function() {
-    $(".banner-image").fadeIn("slow");
-});
-
-$('#arrow-right').on('click', function() {
-    $(".banner-image").fadeIn("slow");
-});
+const sliderImages = document.querySelectorAll('.banner-image');
+let currentImage = 0;
+const leftArrow = document.querySelector('#arrow-left');
+const rightArrow = document.querySelector('#arrow-right');
 
 // Clear images
 function clearImages() {
-    for(var i = 0; i < sliderImages.length; i++) {
+    for(let i = 0; i < sliderImages.length; i++) {
         sliderImages[i].style.display = 'none';
     }
 }
