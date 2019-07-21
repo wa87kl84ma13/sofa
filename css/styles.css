@@ -464,7 +464,16 @@ button {
     padding-left: 0;
 }
 
-@media (min-width: 1280px) {
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="search"] {
+     -webkit-appearance: none;
+     border-radius: 0;
+}
+
+@media (min-width: 1024px) {
     #hamburger-menu {
         display: none;
     }
