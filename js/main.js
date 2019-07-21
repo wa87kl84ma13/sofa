@@ -1,6 +1,6 @@
-const hamburger = document.querySelector('#hamburger-menu');
-const nav = document.querySelector('.main-nav');
-const closeNav = document.querySelector('.close');
+var hamburger = document.querySelector('#hamburger-menu');
+var nav = document.querySelector('.main-nav');
+var closeNav = document.querySelector('.close');
 
 function openMenu() {
     if(nav.style.display === 'block') {
@@ -13,9 +13,9 @@ function openMenu() {
 hamburger.addEventListener('click', openMenu);
 
 // Show search bar when icon is clicked
-const searchIcon = document.querySelector('#search-icon');
-const searchBar = document.querySelector('.search-bar-wrap');
-const closeSearch = document.querySelector('#close-search');
+var searchIcon = document.querySelector('#search-icon');
+var searchBar = document.querySelector('.search-bar-wrap');
+var closeSearch = document.querySelector('#close-search');
 
 function openSearch() {
     if(searchBar.style.display === 'block') {
@@ -28,10 +28,10 @@ function openSearch() {
 searchIcon.addEventListener('click', openSearch);
 
 // Banner slideshow
-const sliderImages = document.querySelectorAll('.banner-image');
-let currentImage = 0;
-const leftArrow = document.querySelector('#arrow-left');
-const rightArrow = document.querySelector('#arrow-right');
+var sliderImages = document.querySelectorAll('.banner-image');
+var currentImage = 0;
+var leftArrow = document.querySelector('#arrow-left');
+var rightArrow = document.querySelector('#arrow-right');
 
 // Clear images
 function clearImages() {
