@@ -34,7 +34,7 @@ var leftArrow = document.querySelector('#arrow-left');
 var rightArrow = document.querySelector('#arrow-right');
 
 // Fade
-$('.arrow').click(function() {
+$('.arrow').bind('click touchstart', function() {
     $('.banner-image').fadeIn('slow');
 });
 
