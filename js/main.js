@@ -2,12 +2,14 @@ const hamburger = document.querySelector('#hamburger-menu');
 const nav = document.querySelector('.main-nav');
 const closeNav = document.querySelector('.close');
 
-function openMenu() {
+function openMenu(e) {
     if(nav.style.display === 'block') {
         nav.style.display = 'none';
     } else {
         nav.style.display = 'block';
     }
+
+    e.preventDefault();
 }
 
 hamburger.addEventListener('click', openMenu);
@@ -17,12 +19,14 @@ const searchIcon = document.querySelector('#search-icon');
 const searchBar = document.querySelector('.search-bar-wrap');
 const closeSearch = document.querySelector('#close-search');
 
-function openSearch() {
+function openSearch(e) {
     if(searchBar.style.display === 'block') {
         searchBar.style.display = 'none';
     } else {
         searchBar.style.display = 'block';
     }
+
+    e.preventDefault();
 }
 
 searchIcon.addEventListener('click', openSearch);
@@ -73,14 +77,20 @@ leftArrow.addEventListener('click', function() {
     if(currentImage === 0) {
         currentImage = sliderImages.length;
     }
+
+    e.preventDefault();
+
     slideLeft();
 });
 
 // Click right arrow to slide
-rightArrow.addEventListener('click', function() {
+rightArrow.addEventListener('click', function(e) {
     if(currentImage === sliderImages.length - 1) {
         currentImage = -1;
     }
+
+    e.preventDefault();
+
     slideRight();
 });
 
