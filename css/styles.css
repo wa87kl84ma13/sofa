@@ -532,7 +532,7 @@ img {
 
     .banner-content h1 {
         font-size: 1.4rem;
-        padding-top: 30%;
+        padding-top: 32%;
         text-align: center;
     }
 
@@ -578,8 +578,13 @@ img {
 
     .featured h2, 
     .accessories h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding-top: 30px;
+    }
+
+    .accessories h2 {
+        width: 65%;
+        margin: 0 auto;
     }
 
     .featured-wrap, 
