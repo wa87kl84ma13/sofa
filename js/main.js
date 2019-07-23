@@ -82,3 +82,15 @@ rightArrow.addEventListener('click', function() {
 });
 
 startSlide();
+
+// Toggle footer links
+$(window).on('resize', function() {
+    if ($(window).width()<480) {
+        $('.footer-links').hide();
+
+    $(".accordion").click(function() {
+        $(this).parent().next('.footer-links').toggle();
+    });
+
+    }
+});
